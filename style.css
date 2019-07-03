@@ -1,0 +1,64 @@
+body{
+    display: grid;
+    font-family: 'Marvel', sans-serif;
+    grid-template-areas: 'navbar navbar navbar navbar'
+                         'header header header header'
+                         'section section section aside'
+                         'footer footer footer footer';
+    grid-template-rows: 10vh 500px 55vh 15vh;
+    grid-template-columns: 25vw 25vw 20vw 30vw;
+ 
+    margin:0;
+}
+body::-webkit-scrollbar {
+    width: 0px; /*Remove scrollbar space*/
+    background: transparent; /*Optional: just make crollbar invisible */
+}
+nav{
+    align-items: center;
+    display: flex;
+    grid-area: navbar;
+    justify-content: space-between;
+    background-color: #f29e38;
+}
+nav div img{
+    margin-left: 20px;
+}
+nav div:nth-child(2) {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%
+}
+a{
+    color: white;
+    font-size: 22pt;
+    text-decoration: none;
+
+}
+header{
+    grid-area: header;
+    background-image: url("imagens/vingadores-guerra-infinita-vingadores-4-cinema-serie-elenco-1200x675.jpg");
+}
+section{
+    grid-area: section;
+    background-color: #010326; 
+    font-size: 22pt;
+}
+section h2{
+    color: white;
+}
+section p{
+    font-size: 20pt;
+    color: white;
+}
+aside{
+    grid-area: aside;
+    background-color: yellow;
+}
+aside img{
+    width: 120px;
+}
+footer{
+    grid-area: footer;
+    background-color: magenta;
+}
